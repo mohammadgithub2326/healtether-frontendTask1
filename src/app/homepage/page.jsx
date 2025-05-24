@@ -411,7 +411,7 @@ module.exports = router;
               >
                 Register
               </button><button 
-                onClick={() => window.location.href = 'https://healtether-state-management-task-fronend.vercel.app/'}
+                onClick={() => window.location.href = 'https://healtether-state-management-task-fronend.vercel.app/'
 
                 } 
                 className="bg-green-300 text-black px-4 py-2 rounded-md font-medium hover:bg-green-700 !rounded-button whitespace-nowrap cursor-pointer"
