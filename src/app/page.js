@@ -40,8 +40,8 @@ const App= () => {
       
       try {
   const endpoint = isSignup
-    ? "http://localhost:5000/api/auth/register"
-    : "http://localhost:5000/api/auth/login";
+    ? "https://healtether-backendtask.onrender.com/api/auth/register"
+    : "https://healtether-backendtask.onrender.com/api/auth/login";
 
   const response = await fetch(endpoint, {
     method: "POST",
