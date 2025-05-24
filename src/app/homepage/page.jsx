@@ -181,13 +181,13 @@ module.exports = router;
         throw new Error(data.msg || 'An error occurred');
       }
     
-      // ✅ Save token to localStorage
+      //  Save token to localStorage
       if (data.token) {
         localStorage.setItem("authToken", data.token);
         console.log("Token saved to localStorage");
       }
     
-      // ✅ Optional: redirect user or show success
+      //  Optional: redirect user or show success
       console.log('Success:', data);
     
     } catch (error) {
@@ -416,7 +416,7 @@ module.exports = router;
                 } 
                 className="bg-green-300 text-black px-4 py-2 rounded-md font-medium hover:bg-green-700 !rounded-button whitespace-nowrap cursor-pointer"
               >
-                Click me for useState Management Task
+                
               </button>
             </div>
             <div className="flex md:hidden items-center">
