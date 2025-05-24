@@ -1,4 +1,4 @@
-// The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
+
 "use client"
 import React, { useState } from 'react';
 import {useRouter} from 'next/navigation';
@@ -15,7 +15,7 @@ const App= () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Form submission logic would go here
+    // Form submission logic 
     console.log(isLoginForm ? 'Login' : 'Register', { email, password });
   };
 
@@ -382,7 +382,7 @@ module.exports = router;
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
                 <i className="fas fa-lock text-green-600 text-2xl mr-2"></i>
-                <span className="text-xl font-bold text-gray-900">AuthStack</span>
+                <span className="text-xl font-bold text-gray-900">healtether Task 1</span>
               </div>
               <div className="hidden md:ml-10 md:flex md:space-x-8">
                 <a href="#" className="text-gray-900 hover:text-green-600 px-3 py-2 rounded-md font-medium">Home</a>
@@ -411,7 +411,8 @@ module.exports = router;
               >
                 Register
               </button><button 
-                onClick={() => {router.push('/')}
+                onClick={() => window.location.href = 'https://healtether-state-management-task-fronend.vercel.app/'}
+
                 } 
                 className="bg-green-300 text-black px-4 py-2 rounded-md font-medium hover:bg-green-700 !rounded-button whitespace-nowrap cursor-pointer"
               >
